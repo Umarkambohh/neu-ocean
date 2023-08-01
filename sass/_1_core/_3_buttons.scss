@@ -1,0 +1,26 @@
+// /*--------------------------------------------------------------------------------
+// ## Core -> Buttons
+// --------------------------------------------------------------------------------*/
+
+.btn {
+    background-color: $black;
+    color: $white;
+    border: 1px solid #000;
+    transition: 0.3s;
+    &:hover {
+        background-color: $yellow;
+        color: $black;
+        border: 1px solid #000;
+    }
+}
+
+.cstm-btn {
+    padding: 10px 60px;
+    border-radius: 6px;
+}
+
+.btn-lg{
+    @media (max-width: 576px) {
+        padding: 15px 80px;
+    }
+}

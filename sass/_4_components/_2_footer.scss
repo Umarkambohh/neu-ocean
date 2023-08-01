@@ -1,0 +1,144 @@
+/*--------------------------------------------------------------------------------
+## Components -> Footer
+--------------------------------------------------------------------------------*/
+
+footer {
+    background-color: $gray-700;
+
+    .footer-top {
+        padding: 28px;
+        border-bottom: 1px solid rgb(0, 0, 0, 0.1);
+
+        .address-section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: $white;
+
+            & > div {
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .contact-info a {
+                color: $white;
+
+                &:hover {
+                    color: $gray-600;
+                }
+            }
+
+            .h7 {
+                font-weight: 700;
+                margin-bottom: 16px;
+            }
+
+            .lead {
+                line-height: 1.6;
+            }
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+
+                .lead {
+                    margin: auto;
+                }
+            }
+            .Registor{
+                width: 50%;
+
+                @media (max-width: 578px) {
+                    width: 80%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        ul li {
+            list-style: none;
+            line-height: 1.6;
+            font-size: 14px;
+            margin-bottom: 4px;
+
+            @media (min-width: 1600px) {
+                margin-bottom: 14px;
+
+            }
+
+            a {
+                color: $white;
+                transition: 0.3s;
+                &:hover {
+                    color: rgb(225, 217, 217);
+                }
+            }
+        }
+
+        ul{
+            @media (max-width: 576px) {
+                padding-left: 0;
+            }
+        }
+
+        .footer-nav-items,
+        .career-center {
+            li a {
+                font-weight: 700;
+            }
+
+            
+        }
+        
+        .career-center{
+            li  {
+                @media (min-width: 1600px) {
+                    margin:0 0 14px 120px;
+
+                }
+            }
+        }
+
+        .social-acounts {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            i {
+                font-size: 20px;
+                color: $white;
+
+                &:hover {
+                    color: rgb(223, 215, 215);
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .about-jirlie,
+        .career-center {
+            @include media-breakpoint-down(md) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $white;
+        P {
+            margin: 0;
+            padding: 40px 0;
+        }
+
+        @include media-breakpoint-down(md) {
+            flex-direction: column;
+            text-align: center;
+
+            P {
+                padding: 10px 0;
+            }
+        }
+    }
+}

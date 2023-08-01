@@ -1,0 +1,33 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Career -> Benefits Section
+--------------------------------------------------------------------------------*/
+
+.nue-benefits {
+    background-image: radial-gradient(circle at 50% 50%, #fff 63.28125%, #ffd3f4 100%);
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+    padding: 15px 0;
+
+    h3 {
+        color: $black;
+        margin-bottom: 15px;
+    }
+
+    .card-main {
+        text-align: center;
+        padding: 0 45px;
+
+        img {
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: $black;
+        }
+    }
+}

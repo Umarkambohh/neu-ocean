@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Investor -> List Crunchbase
+--------------------------------------------------------------------------------*/
+
+.listes-crunchbase{
+    padding: 180px 0 100px;
+
+    @media (max-width: 576px) {
+        padding: 125px 0 60px;
+        }
+    text-align: center;
+
+    h6{
+        font-weight: 600;
+        line-height: 1.2;
+    }
+
+    a{
+        h6{
+            color: $blue;
+            font-weight: 600;
+
+        }
+    }
+}

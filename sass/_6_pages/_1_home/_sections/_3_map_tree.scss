@@ -1,0 +1,254 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Home -> Map Tree
+--------------------------------------------------------------------------------*/
+
+.map-tree-main {
+    position: relative;
+    margin-top: 105px;
+
+    @media (min-width: 578px){
+        margin-top: 158px;
+    }
+
+
+    p {
+        font-size: clamp(16px, calc(1rem + ((1vw - 3.2px) * 0.2885)), 19px);
+        color: $black;
+        text-align: center;
+        margin: 40px auto 22px;
+        width: 60%;
+
+        @media (max-width: 578px){
+            width: 95%;
+        margin: 40px auto 54px;
+
+        }
+    }
+
+    @mixin animate($name: v-line) {
+        animation-name: $name;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        @content;
+    }
+
+    .map-tree {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        @include media-breakpoint-down(sm) {
+        }
+
+        img {
+            border-radius: 10px;
+        }
+
+        .step-1 {
+            width: 57%;
+            position: relative;
+
+            .line-1 {
+                height: 2px;
+                width: 100%;
+                background-color: black;
+                margin-bottom: -46px;
+                z-index: 1;
+                @include animate(h-line);
+            }
+
+            .row-1 {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: space-between;
+
+                .box {
+                    width: 80px;
+                    height: 80px;
+                    max-width: 80px;
+                    max-height: 80px;
+                    text-align: center;
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 100%;
+            }
+        }
+
+        .linker-1 {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: space-between;
+            width: 35%;
+            margin-top: -34px;
+            position: relative;
+            height: 150px;
+
+            .line {
+                margin: 0 auto;
+                width: 2px;
+                height: 100%;
+                background-color: black;
+                @include animate(v-line);
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 80%;
+                height: 100px;
+            }
+        }
+
+        .step-2 {
+            width: 40%;
+            margin: 0 auto;
+            position: relative;
+
+            .line-2 {
+                height: 2px;
+                width: 100%;
+                background-color: black;
+                margin-bottom: -40px;
+                z-index: 1;
+                @include animate(h-line);
+            }
+
+            .row-2 {
+                display: flex;
+                align-items: center;
+                align-content: center;
+                justify-content: space-between;
+
+                .box {
+                    width: 80px;
+                    height: 80px;
+                }
+
+                img {
+                    margin-top: -8px;
+                    @include media-breakpoint-down(sm) {
+                        margin-top: -2px;
+                    }
+                }
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 60%;
+            }
+        }
+
+        .linker-2 {
+            width: 25%;
+            margin-top: -41px;
+            height: 205px;
+
+            .line {
+                margin: 0 auto;
+                width: 2px;
+                height: 100%;
+                background-color: black;
+                @include animate(v-line);
+            }
+
+            @media screen and (max-width: 992px) {
+                width: 100%;
+                height: 100px;
+            }
+        }
+        
+        @media screen and (max-width: 576px) {
+            .box {
+                img {
+                    width: 80px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    @keyframes h-line {
+        from {
+            width: 0%;
+        }
+
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes v-line {
+        from {
+            height: 0%;
+        }
+
+        to {
+            height: 100%;
+        }
+    }
+
+    .tree-braches {
+        display: flex;
+        justify-content: center;
+
+        & {
+            @include media-breakpoint-down(md) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .sub-branch {
+            position: relative;
+            margin: 45px 35px 0 35px;
+            width: 180px;
+            height: 265px;
+            box-shadow: 0 9px 28px -12px #000;
+            background: #fffcf8;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 46px;
+                height: 100%;
+                border-top: 2px solid rgb(0, 0, 0);
+                box-sizing: border-box;
+                top: -155px;
+                left: -65px;
+                transform: rotate(90deg);
+            }
+
+            img {
+                box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+                margin-top: 15px;
+                width: 148px;
+                height: 148px;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin: 45px 10px 0 10px;
+            }
+        }
+    }
+
+    .gradient-bg1 {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        width: 100%;
+        height: 1000px ;
+        z-index: -1;
+        @media (max-width: 768px){
+            display: none;
+        }
+    }
+
+  
+}

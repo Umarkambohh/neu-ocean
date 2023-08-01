@@ -1,0 +1,46 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Investor -> Second Accordian
+--------------------------------------------------------------------------------*/
+
+.second-accordian{
+    padding: 170px 0 175px;
+    
+    @media (max-width: 576px) {
+        padding: 100px 0 70px;
+        }
+
+    .accordion-item{
+        button{
+            .disc{
+                .h7{
+                    color: $gray-800;
+                    font-weight: 400;
+                    margin-bottom: 8px;
+                }
+            }
+
+            .disc:nth-child(1){
+                font-size: 16px;
+                color: $black;
+                line-height: 1.2;
+                width: 95%;
+
+
+            }
+           
+        }
+        
+        .accordion-body{
+            .person-info{
+                margin-bottom: 30px;
+                color: $black;
+
+                .name{
+                    color: $gray-800;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    
+}

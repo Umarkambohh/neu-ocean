@@ -1,0 +1,44 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Home ->  Dashboard 
+--------------------------------------------------------------------------------*/
+
+.dashboard-content {
+    width: 63%;
+    margin: 0 auto;
+
+    @media (max-width: 578px) {
+        width: 80%;
+    }
+
+    .h6 {
+        font-size: calc(1.125rem + ((1vw - 3.2px) * 0.3704));
+        line-height: 1.2;
+        margin-bottom: 94px;
+
+        @media (max-width: 578px) {
+            margin-bottom: 40px;
+
+        }
+    }
+
+    h3 {
+        font-size: clamp(17px, calc(1.0625rem + ((1vw - 3.2px) * 1.7308)), 35px);
+        line-height: 1.2;
+        margin-bottom: 20px;
+
+        @media (max-width: 578px) {
+            font-weight: 500;
+            margin: -5px 0 25px;
+        }
+    }
+
+    .display-2 {
+        margin-bottom: 12px;
+
+        @media (max-width: 578px) {
+            font-weight: 500;
+              margin-bottom: 18px;
+        }
+    }
+}
+

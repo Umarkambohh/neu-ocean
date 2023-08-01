@@ -1,0 +1,42 @@
+/*--------------------------------------------------------------------------------
+## Components -> Accordion
+--------------------------------------------------------------------------------*/
+
+.accordion{
+
+    h5{
+        margin-bottom: 24px;
+    }
+
+    .h8{
+        margin-bottom: 18px;
+    }
+    p{
+        margin-bottom: 5px;
+        color: $black;
+    }
+    .open-pfd{
+        margin-top: 29px;
+
+        a{
+            color: $blue;
+        }
+    }
+
+    .accordion-item{
+        .accordion-button{
+            font-size: calc(1rem + ((1vw - 3.2px) * 0.3704));
+            line-height: 1.2;
+            border-bottom: 1px solid rgb(226, 230, 233);
+            padding: 26px 0;
+
+            @media (max-width: 576px) {
+                padding: 26px 15px;
+                    
+                }
+        }
+    }
+
+
+    
+}

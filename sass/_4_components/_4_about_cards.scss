@@ -1,0 +1,109 @@
+/*--------------------------------------------------------------------------------
+## Components  -> About Cards
+--------------------------------------------------------------------------------*/
+
+
+.about-card-main {
+    .about-row {
+        .col-bg {
+            background: #fde3fc;
+            padding: 100px 40px 100px 150px;
+
+            .about-img {
+                margin-right: -180px;
+
+                img{
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                    border-radius: 15px;
+                }
+
+                @media screen and (max-width: 840px) {
+                    margin-right: 0px;
+                    margin-top: -160px;
+                }
+            }
+
+            @media screen and (max-width: 840px) {
+                padding: 80px 15px;
+            }
+        }
+
+         h6 {
+        font-size: clamp(19px, calc(1.1875rem + ((1vw - 3.2px) * 0.5769)), 25px);
+        line-height: 1.4;
+        font-weight: 400;
+        color: $black;
+        margin-bottom: 38px;
+
+        @media (max-width:578px) {
+            margin-bottom: 19px;
+        }
+    }
+
+    .disc {
+        font-size: calc(2rem + ((1vw - 3.2px) * 1.2037));
+        line-height: 1;
+        margin-bottom: 40px;
+
+        @media (max-width:578px) {
+            margin-bottom: 20px;
+        }
+    }
+
+        .pink-bg {
+            background-color: $pink;
+        }
+
+        .green-bg {
+            background-color: $yellow;
+            transform: scaleX(-1);
+
+            img {
+                transform: scaleX(-1);
+            }
+        }
+        .blue-bg {
+            background-color: $blue;
+        }
+
+        .about-col2 {
+            .h7 {
+                font-weight: 400;
+                line-height: 1.5;
+                color: $black;
+            }
+        }
+
+        @media screen and (max-width: 840px) {
+            margin-top: 120px;
+            .about-col2 {
+                h2 {
+                    font-weight: 700;
+                    font-size: 35px;
+                    margin-bottom: 22px;
+                }
+
+                padding: 0 15px;
+                text-align: center;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            .col-green {
+                margin-left: 55px;
+            }
+        }
+    }
+
+    h1 {
+        font-size: clamp(27px, calc(1.6875rem + ((1vw - 3.2px) * 0.4808)), 32px);
+        color: $black;
+        line-height: 1.5;
+        margin: 36px 0;
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+

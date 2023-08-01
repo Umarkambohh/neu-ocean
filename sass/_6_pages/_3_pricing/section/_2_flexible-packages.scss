@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Pricing -> Flexible Packages
+--------------------------------------------------------------------------------*/
+
+.flexible-packages-main {
+    h2 {
+        margin-bottom: 30px;
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 16px;
+        }
+    }
+    h6 {
+        width: 40%;
+        margin: 0 auto 95px;
+        text-align: center;
+        line-height: 1.2;
+
+        @include media-breakpoint-down(md) {
+            width: 100%;
+            margin: 0 auto 65px;
+        }
+    }
+
+    .packages-card {
+        position: relative;
+        border: 1px solid $black;
+        height: 520px;
+        transition: 0.5s;
+        background-color: $gray-100;
+
+        &:hover {
+            scale: 1.1;
+            box-shadow: 0 0 10px #444;
+        }
+
+        .packages-card-box {
+            text-align: center;
+            border-bottom: 1px solid $black;
+            padding: 20px 0;
+
+            .recommended {
+                position: absolute;
+                color: white;
+                font-size: 13px;
+                display: block;
+                text-align: center;
+                width: 60%;
+                left: 20%;
+                top: 0;
+                transform: translateY(-50%);
+                padding: 10px 0;
+                font-weight: bold;
+                background-color: #ff5700;
+                border-radius: 6px;
+            }
+
+            h3 {
+                color: $black;
+                span {
+                    font-size: 16px;
+                    color: $black;
+                }
+            }
+            
+            small {
+                font-size: 10px;
+                color: $black;
+                line-height: 1;
+                font-weight: 500;
+                width: 35%;
+                display: block;
+                margin: 0 auto 20px;
+            }
+        }
+
+        ul li {
+            font-size: 11px;
+            color: $black;
+            line-height: 1.9;
+            list-style: none;
+            span {
+                color: $blue;
+            }
+        }
+
+        @include media-breakpoint-down(lg) {
+            margin-bottom: 40px;
+        }
+    }
+}

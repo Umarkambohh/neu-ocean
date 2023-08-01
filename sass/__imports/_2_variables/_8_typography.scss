@@ -1,0 +1,78 @@
+// Variables -> Typograpghy
+// custom typography
+
+// define font family
+$font-family-serif: 'Poppins', sans-serif;
+$font-family-sans-serif: 'Questrial', sans-serif;
+$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+
+// scss-docs-start font-variables
+
+$font-size-base: 1rem; // Assumes the browser default, typically `16px`
+$font-size-sm: $font-size-base * 0.875;
+$font-size-lg: $font-size-base * 1;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+// heading sizes
+
+$h1-font-size: clamp(32px, calc(2rem + ((1vw - 3.2px) * 1.25)), 45px);
+$h2-font-size: clamp(24px, calc(1.5rem + ((1vw - 3.2px) * 1.1538)), 36px);
+$h3-font-size: clamp(28px, calc(1.75rem + ((1vw - 3.2px) * 0.6731)), 35px); // use
+$h4-font-size: clamp(20px, calc(1.25rem + ((1vw - 3.2px) * 1.1538)), 32px); // use
+$h5-font-size: clamp(25px, calc(1.5625rem + ((1vw - 3.2px) * 0.4808)), 30px);
+$h6-font-size: clamp(17px, calc(1.0625rem + ((1vw - 3.2px) * 0.3846)), 21px); // use
+
+// heading map
+
+$font-sizes: (
+    1: $h1-font-size,
+    2: $h2-font-size,
+    3: $h3-font-size,
+    4: $h4-font-size,
+    5: $h5-font-size,
+    6: $h6-font-size,
+);
+
+//  headings-variables
+
+$headings-margin-bottom: $spacer * 0.5;
+$headings-font-family: $font-family-base;
+$headings-font-style: null;
+$headings-font-weight: 400;
+$headings-line-height: 1;
+$headings-color: $gray-800;
+
+// display-headings
+
+$display-font-sizes: (
+    1: clamp(30px, calc(1.875rem + ((1vw - 3.2px) * 2.8846)), 60px),
+    2: clamp(27px, calc(1.6875rem + ((1vw - 3.2px) * 2.8846)), 57px),
+    3: clamp(26px, calc(1.625rem + ((1vw - 3.2px) * 2.3077)), 50px),
+    4: clamp(30px, calc(1.875rem + ((1vw - 3.2px) * 1.7308)), 48px),
+    5: 40px,
+    6: 33px,
+);
+
+$display-font-weight: 400;
+$display-line-height: 1.2;
+
+//  type-variables
+
+$lead-font-size: 14px;
+$lead-font-weight: 400;
+$small-font-size: 12px;
+$text-muted: var(--#{$prefix}secondary-color);

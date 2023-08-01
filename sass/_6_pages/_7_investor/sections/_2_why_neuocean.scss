@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Investor -> Why Neu Ocean
+--------------------------------------------------------------------------------*/
+
+.why-neuocean {
+    h5 {
+        margin-bottom: 30px;
+    }
+
+    .h7 {
+        font-weight: 600;
+    }
+    
+    .neu-card {
+        padding-right: 65px;
+        margin-bottom: 43px;
+
+        @media (max-width: 578px) {
+            margin-bottom: 15px;
+            }
+    }
+}

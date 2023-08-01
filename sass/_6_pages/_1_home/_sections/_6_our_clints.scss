@@ -1,0 +1,119 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Home -> Our Clints
+--------------------------------------------------------------------------------*/
+
+.our-clints-main {
+    margin: 100px 0 30px;
+
+    .our-clints-row {
+        background-color: $blue;
+        border-radius: 15px;
+        padding: 50px;
+
+        @media (max-width: 576px) {
+        padding: 50px 8px;
+            
+        }
+    }
+
+    h5{
+        @media (max-width: 768px) {
+            text-align: center;
+            }
+    }
+
+    .display-3 {
+        font-weight: 400;
+        line-height: 1.4;
+
+        @media (max-width: 576px) {
+            text-align: center;
+            }
+    }
+
+    .slider {
+        background-color: $white;
+        padding: 50px 63px 140px 63px;
+        border-radius: 6px;
+
+        @media (max-width: 578px){
+        padding: 27px 63px 0px 63px;
+        }
+    }
+
+    .title {
+        font-size: 25px;
+        line-height: 1.4;
+        color: $black;
+        margin-bottom: 28px;
+    }
+
+    .description {
+        font-size: clamp(16px, calc(1rem + ((1vw - 3.2px) * 0.0962)), 17px);
+        color: $black;
+        line-height: 1.5;
+        margin-bottom: 28px;
+    }
+
+    .personal-description {
+        display: flex;
+        align-items: start  ;
+
+        img {
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+
+            @media (max-width: 578px) {
+                width: 60px;
+                height: 60px;
+            }
+        }
+
+        .lead {
+            font-weight: 700;
+        }
+    }
+
+    .glide__arrows {
+        color: rgb(0, 0, 0);
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        .glide__arrow--left {
+            width: 40px;
+            height: 40px;
+            color: black;
+            margin: 20px 0 0 -95px;
+            font-size: 20px;
+            border: none;
+            box-shadow: none;
+            transition: 0.2s;
+            &:hover {
+                background-color: #4c5a67;
+                color: white;
+                border-radius: 50%;
+                font-weight: 600;
+            }
+        }
+
+        .glide__arrow--right {
+            width: 40px;
+            height: 40px;
+            margin: 20px -95px 0 0;
+            font-size: 20px;
+            border: none;
+            color: black;
+            box-shadow: none;
+            transition: 0.2s;
+
+            &:hover {
+                background-color: #4c5a67;
+                color: white;
+                border-radius: 50%;
+                font-weight: 600;
+            }
+        }
+    }
+}

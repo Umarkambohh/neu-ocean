@@ -1,0 +1,24 @@
+// Variables -> Navs
+
+// Navs
+
+// Nav Link
+$nav-link-padding-y: 0.5rem;
+$nav-link-padding-x: 1rem;
+$nav-link-font-size: 16px;
+$nav-link-font-weight: 400;
+$nav-link-color: var(--#{$prefix}link-color);
+$nav-link-hover-color: var(--#{$prefix}link-hover-color);
+$nav-link-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+
+$navbar-brand-font-size: $font-size-lg;
+// Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
+$nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2;
+
+// Toggler
+$navbar-toggler-padding-y: 0.25rem;
+$navbar-toggler-padding-x: 0.75rem;
+$navbar-toggler-font-size: $font-size-lg;
+$navbar-toggler-border-radius: $btn-border-radius;
+$navbar-toggler-focus-width: $btn-focus-width;
+$navbar-toggler-transition: box-shadow 0.15s ease-in-out;

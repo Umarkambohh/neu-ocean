@@ -1,0 +1,45 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Investor -> Investor Banner
+--------------------------------------------------------------------------------*/
+
+.investor-banner {
+    margin-bottom: 70px;
+
+    img {
+        margin: 85px 0 50px;
+
+        @media (max-width: 578px) {
+            margin: 85px 0 43px;
+
+            }
+    }
+
+    .content {
+        width: 50%;
+        margin: 0 auto;
+
+        @media (max-width: 578px) {
+        width: 100%;
+        }
+
+        p {
+            line-height: 1.7;
+            color: $black;
+            margin: 0 auto 80px;
+
+            span {
+                font-weight: 500;
+                color: #313B44;
+            }
+        }
+
+        .h5 {
+            line-height: 1.2;
+            margin: 0 auto 15px;
+        }
+
+        h2 {
+            color: #74808b;
+        }
+    }
+}

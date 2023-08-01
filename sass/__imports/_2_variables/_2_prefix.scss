@@ -1,0 +1,4 @@
+// Variables -> Prefix Variables
+
+$variable-prefix: bs-; // Deprecated in v5.2.0 for the shorter `$prefix`
+$prefix: $variable-prefix;

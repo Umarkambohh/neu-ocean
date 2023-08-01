@@ -1,0 +1,24 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Home -> Why Neo Ocean
+--------------------------------------------------------------------------------*/
+
+.why-neu-ocean {
+    width: 60%;
+    margin: 80px auto;
+
+    @media (max-width: 578px){
+    width: 70%;
+        margin: 65px auto;
+    }
+
+    h4 {
+        font-weight: 500;
+        margin-bottom: 25px;
+        line-height: 1.2;
+
+        @media (max-width: 578px){
+        margin-bottom: 12px;
+
+        }
+    }
+}

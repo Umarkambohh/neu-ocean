@@ -1,0 +1,38 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Intellectual Property -> Intellectual Property Section
+--------------------------------------------------------------------------------*/
+
+.intellectual-property{
+        width: 50%;
+        margin: 75px auto 140px;
+
+        @media (max-width: 576px) {
+            width: 80%;
+            margin: 75px auto 65px;
+    
+        }
+
+    h1{
+        font-size: calc(1.25rem + ((1vw - 3.2px) * 0.2778));
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    small{
+        font-size: 13px;
+        color: $black;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    p{
+        color: $black;
+        line-height: 1.7;
+        margin-bottom: 28px;
+    }
+    
+    .h8{
+        font-weight: 600;
+        margin: 52px 0 50px;
+    }
+}

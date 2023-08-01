@@ -1,0 +1,163 @@
+/*!
+* Project Name: Neu-Ocean
+* Author: Neu-Ocean
+* Description: Neu-Ocean using bootarp 5.3 vection.
+*/
+/*--------------------------------------------------------------------------------
+# TABLE OF CONTENTS:
+----------------------------------------------------------------------------------
+# Bootstrap
+# Imports
+    - Functions
+        - Functions
+	- Variables
+        - Colors
+        - Prefix
+        - Spacing
+        - Body
+        - Link_anchor
+        - Grid_brakepoints
+        - Borders
+        - Typography
+        - Forms_buttons
+        - Nav
+        - Accordian
+        
+# Core
+    - Type
+    - Color
+    - Buttons
+
+# Fonts
+    - Font Awesome
+
+
+# Third Party
+    - Js Glide    
+    - Avo Animation
+    
+# Components
+	- Header
+	- Footer
+	- Nav Tabs
+	- About Cards
+	- Accordion
+	- Contact Form
+
+# Section
+    - Home Contact Form
+
+# Pages
+	- Home
+        - Home Banner
+        - Dashboard
+        - Map Tree
+        - Why Neu Ocean
+        - Over Lap Section
+        - Our Clints
+        - News Letter
+  
+    - Solutions
+        - Jirlie Busniess Managment
+        - Jirlie Info Cards     
+        - System Features     
+        - System Feature Details     
+        - Our Numbers  
+        
+    - Pricing
+        - Our Services
+        - Flexible Packages
+        - Pricing Section 2
+        - Busniess modal
+
+    - News
+        - News     
+
+    - Contact
+        - Contact
+
+    - About
+        - About Cards
+        
+    - Investor 
+        - Investor Banner 
+        - Why Neu Ocean    
+        - Neu Tabs   
+        - List Crunchbase   
+        - Team   
+        - Second Accordion
+        
+    - Intellectual Property
+        - Intellectual Property
+        
+    - Cookies
+        - Cookies
+    
+    - Privacy
+        - Privacy
+        
+    - Terms    
+        - Terms
+
+    - Career
+        - Working Details
+        - Neu Benefits
+        - Career Image
+        - Job Looking
+        - Career Contact Form    
+            
+# Utilities
+    - null
+-------------------------------------------------------------*/
+
+/*-----------------------------------------------------------
+    Googel Fonts
+-------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Questrial&display=swap');
+
+/*-----------------------------------------------------------
+    # Imports
+-------------------------------------------------------------*/
+
+@import '__imports/imports';
+/*-----------------------------------------------------------
+    # Bootstrap
+-------------------------------------------------------------*/
+
+@import '__bootstrap/bootstrap';
+
+/*-----------------------------------------------------------
+    # Core
+-------------------------------------------------------------*/
+@import '_1_core/core';
+
+/*-----------------------------------------------------------
+    # Fonts
+-------------------------------------------------------------*/
+@import '_2_fonts/fonts';
+
+/*-----------------------------------------------------------
+    # Third Party
+-------------------------------------------------------------*/
+@import '_3_third_party/third_party';
+
+/*-----------------------------------------------------------
+# Components
+-------------------------------------------------------------*/
+@import '_4_components/components';
+
+/*-----------------------------------------------------------
+# Sections
+-------------------------------------------------------------*/
+@import '_5_section/section.scss';
+
+/*-----------------------------------------------------------
+# Pages
+-------------------------------------------------------------*/
+@import '_6_pages/pages';
+
+/*-----------------------------------------------------------
+# Utilities
+-------------------------------------------------------------*/
+// @import '_7_utilities/utilites';

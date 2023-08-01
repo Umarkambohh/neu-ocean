@@ -1,0 +1,50 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Pricing -> Flexible Packages
+--------------------------------------------------------------------------------*/
+
+.busniess-modal {
+    padding: 0 0;
+    background-color: #ffffff;
+
+    .busniess-modal-row {
+        align-items: center;
+    }
+    
+    img {
+        width: 100%;
+        height: auto;
+        @include media-breakpoint-up(lg) {
+            margin-left: 70px;
+        }
+    }
+
+    .modal-discription {
+        padding: 25px 15px;
+        background-color: $white;
+
+        h4 {
+            font-size: clamp(26px, calc(1.625rem + ((1vw - 3.2px) * -0.5769)), 20px);
+            font-weight: 700;
+            margin-bottom: 25px;
+
+            @include media-breakpoint-down(md) {
+                text-align: center;
+            }
+        }
+
+        h6 {
+            line-height: 2;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 35px 40px;
+            margin-left: -135px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 110px 0;
+        background-color: #d6d4d0;
+    }
+}
+

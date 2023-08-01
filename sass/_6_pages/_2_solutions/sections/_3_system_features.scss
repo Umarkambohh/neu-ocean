@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Solutions -> System Features
+--------------------------------------------------------------------------------*/
+
+.system-features {
+    padding: 50px 0;
+    width: 52%;
+    margin: 0 auto;
+    text-align: center;
+
+    .display-4 {
+        margin-bottom: 10px;
+    }
+
+    .h8 {
+        color: $black;
+        line-height: 2;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 90%;
+    }
+}

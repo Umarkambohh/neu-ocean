@@ -1,0 +1,22 @@
+/*--------------------------------------------------------------------------------
+### Pages -> Solutions -> System Features Details
+--------------------------------------------------------------------------------*/
+.system-feature-details{
+    
+    img{
+        width: 230px;
+        height: auto;
+        margin-bottom: 25px;
+        border-radius: 6px;
+    }
+    .h8{
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    .sfd-col{
+        @media (max-width: 576px) {
+            margin-bottom: 20px;
+        }
+    }
+}
